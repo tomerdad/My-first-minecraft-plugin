@@ -73,11 +73,11 @@ public class Main extends JavaPlugin implements Listener {
                     break;
                 case COBBLESTONE:
                     player.closeInventory();
-                    TeleportTo(player, 1000, player.getWorld());
+                    TeleportTo(player, 2000, player.getWorld());
                     break;
                 case STONE:
                     player.closeInventory();
-                    TeleportTo(player, 1000, player.getWorld());
+                    TeleportTo(player, 5000, player.getWorld());
                     break;
                 case BARRIER:
                     player.closeInventory();
