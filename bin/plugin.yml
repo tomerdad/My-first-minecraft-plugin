@@ -1,0 +1,7 @@
+main: me.tomerdad.MyFirstPlugin.Main
+name: MyFirstPlugin
+version: 1
+author: tomerdad
+
+commands:
+   changelocation:
