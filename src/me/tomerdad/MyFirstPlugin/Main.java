@@ -57,7 +57,7 @@ public class Main extends JavaPlugin implements Listener {
             // and includes in the if the name if there are 2 of same item.
             	
             switch(e.getCurrentItem().getType()){
-                case NETHER_BRICK:
+                case NETHER_BRICKS:
                     player.closeInventory();
                     // get the nether world by the nether folder's name
                     World nether = Bukkit.getWorld("world_nether");
@@ -67,7 +67,7 @@ public class Main extends JavaPlugin implements Listener {
                     player.closeInventory();
                     TeleportTo(player, 0, player.getWorld());
                     break;
-                case GRASS:
+                case GRASS_BLOCK:
                     player.closeInventory();
                     TeleportTo(player, 1000, player.getWorld());
                     break;
@@ -126,9 +126,9 @@ public class Main extends JavaPlugin implements Listener {
 		lore.add(ChatColor.GOLD + "Click Me To Teleport!");
 		
 		//create Items
-		addItemToGui(gui, Material.NETHER_BRICK, "NETHER", ChatColor.YELLOW, lore, 11);
+		addItemToGui(gui, Material.NETHER_BRICKS, "NETHER", ChatColor.YELLOW, lore, 11);
 		addItemToGui(gui, Material.DIRT, "0,0", ChatColor.RED, lore, 12);
-		addItemToGui(gui, Material.GRASS, "1000X1000", ChatColor.DARK_GREEN, lore, 13);
+		addItemToGui(gui, Material.GRASS_BLOCK, "1000X1000", ChatColor.DARK_GREEN, lore, 13);
 		addItemToGui(gui, Material.COBBLESTONE, "2000X2000", ChatColor.GRAY, lore, 14);
 		addItemToGui(gui, Material.STONE, "5000X5000", ChatColor.DARK_GRAY, lore, 15);
 		addItemToGui(gui, Material.BARRIER, "Exit", ChatColor.DARK_RED, null, 26);
